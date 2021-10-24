@@ -16,5 +16,8 @@ public class Programa {
         System.out.println(vendedor);
 
         VendedorDAO vendedorDAO = DAOFactory.criarVendedorDAO();
+
+        Vendedor vendedor1 = vendedorDAO.findById(3);
+        System.out.println(vendedor1);
     }
 }
